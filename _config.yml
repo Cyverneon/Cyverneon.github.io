@@ -1,8 +1,8 @@
 # Site settings
 title: Alex Firth Portfolio
 description: Game dev portfolio site
-# baseurl: "/particle" # the subpath of your site, e.g. /blog
-# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://cyverneon.github.io/" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Alex Firth
