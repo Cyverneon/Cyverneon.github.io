@@ -11,6 +11,12 @@
 }
 
 .user-projects {
+  display: flex;
+  flex-direction: column;
+  @media only screen and (min-width: $cut)
+  {
+    flex-direction: row;
+  }
   margin: 20px auto;
   img {
     max-width: 100%;
@@ -33,43 +39,59 @@
   text-align: center;
 }
 
-.contents {
-  @media only screen and (min-width: $cut) {
-    margin-left: 0;
+.contents
+{
+  @media only screen and (min-width: $cut)
+  {
     width: 48%;
   }
 }
 
-.contents-right {
-  @media only screen and (min-width: $cut) {
-    float: right;
-    margin-top: -5%;
+.images-right
+{
+  @media only screen and (min-width: $cut)
+  {
     width: 48%;
-  }
-}
-.images-right {
-  @media only screen and (min-width: $cut) {
-    float: right;
-    width: 48%;
-  }
-  img {
-    @media only screen and (min-width: $cut) {
-      float: right;
-    }
   }
 }
 
-.images-left {
-  @media only screen and (min-width: $cut) {
-    float: left;
-    width: 48%;
-  }
-  img {
-    @media only screen and (min-width: $cut) {
-      float: left;
-    }
-  }
-}
+// .contents {
+//   @media only screen and (min-width: $cut) {
+//     margin-left: 0;
+//     width: 48%;
+//   }
+// }
+
+// .contents-right {
+//   @media only screen and (min-width: $cut) {
+//     float: right;
+//     margin-top: -5%;
+//     width: 48%;
+//   }
+// }
+// .images-right {
+//   @media only screen and (min-width: $cut) {
+//     float: right;
+//     width: 48%;
+//   }
+//   img {
+//     @media only screen and (min-width: $cut) {
+//       float: right;
+//     }
+//   }
+// }
+
+// .images-left {
+//   @media only screen and (min-width: $cut) {
+//     float: left;
+//     width: 48%;
+//   }
+//   img {
+//     @media only screen and (min-width: $cut) {
+//       float: left;
+//     }
+//   }
+// }
 
 .project-link {
   display: inline-block;
