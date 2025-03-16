@@ -3,7 +3,7 @@
   display: flex;
   vertical-align: bottom;
   width: 100%;
-  min-height: 100vh;
+  min-height: 60vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -70,7 +70,7 @@
     font-size: 15px;
     padding: 10px;
     margin: 5px;
-    border-radius: 50%;
+    border-radius: 20%;
     border: 2px solid #FFF;
     transition: all .3s;
     &:hover {
