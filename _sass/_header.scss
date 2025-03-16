@@ -90,7 +90,7 @@
 }
 
 .down {
-  color: #ff0000;
+  color: #ffffff;
   position: absolute;
   bottom: 25px;
   width: 100%;
@@ -109,7 +109,7 @@
       transform: translate(-50%, -50%);
       width: 100px;
       height: 100px;
-      fill: #ff0000;
+      fill: #ffffff;
       -webkit-animation: pulse 1.3s infinite;
       animation: pulse 1.3s infinite;
       &:hover {
