@@ -17,3 +17,6 @@ google-analytics:
   id: ""
 
 exclude: ['package.json', 'src' , 'node_modules']
+
+sass:
+  sass_dir: src/styles
