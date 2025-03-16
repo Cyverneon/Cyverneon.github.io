@@ -10,6 +10,10 @@
   }
 }
 
+.project-title {
+  text-align: center;
+}
+
 .user-projects {
   display: flex;
   flex-direction: column;
@@ -19,13 +23,11 @@
     align-items: center;
   }
   margin: 20px auto;
+  margin-top: 0px auto;
   img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
-  }
-  h5 {
-    margin: 0;
   }
   li {
     color: $main;
@@ -36,63 +38,22 @@
   }
 }
 
-.project-title {
-  text-align: center;
-}
-
 .contents
 {
   @media only screen and (min-width: $cut)
   {
     width: 48%;
+    margin-right: 10px;
   }
 }
 
-.images-right
+.images
 {
   @media only screen and (min-width: $cut)
   {
     width: 48%;
   }
 }
-
-// .contents {
-//   @media only screen and (min-width: $cut) {
-//     margin-left: 0;
-//     width: 48%;
-//   }
-// }
-
-// .contents-right {
-//   @media only screen and (min-width: $cut) {
-//     float: right;
-//     margin-top: -5%;
-//     width: 48%;
-//   }
-// }
-// .images-right {
-//   @media only screen and (min-width: $cut) {
-//     float: right;
-//     width: 48%;
-//   }
-//   img {
-//     @media only screen and (min-width: $cut) {
-//       float: right;
-//     }
-//   }
-// }
-
-// .images-left {
-//   @media only screen and (min-width: $cut) {
-//     float: left;
-//     width: 48%;
-//   }
-//   img {
-//     @media only screen and (min-width: $cut) {
-//       float: left;
-//     }
-//   }
-// }
 
 .project-link {
   display: inline-block;
