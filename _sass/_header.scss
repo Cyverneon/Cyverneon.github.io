@@ -1,5 +1,5 @@
 #particles-js {
-  background: $bg-main;
+  background: $bg;
   display: flex;
   vertical-align: bottom;
   width: 100%;
@@ -74,11 +74,11 @@
     border: 1px solid #FFF;
     transition: all .3s;
     &:hover {
-      color: $bg-main;
+      color: $bg;
       background: $main;
     }
     &:active {
-      color: $bg-main;
+      color: $bg;
       background: $main;
     }
     @media only screen and (min-width:$cut) {

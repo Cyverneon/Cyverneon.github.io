@@ -86,7 +86,7 @@
   &:hover {
     background-color: $main;
     border-color: $main;
-    color: $bg-main;
+    color: $bg;
     transition: color 0.3s ease-in,
                 background-color 0.3s ease-in,
                 border-color 0.3s ease-in;
@@ -94,7 +94,7 @@
   &:active {
     background-color: $main;
     border-color: $main;
-    color: $bg-main;
+    color: $bg;
     transition: color 0.3s ease-in,
                 background-color 0.3s ease-in,
                 border-color 0.3s ease-in;
