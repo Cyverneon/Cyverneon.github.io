@@ -3,4 +3,4 @@ baseurl: "" # the subpath of your site, e.g. /blog
 title: "Alex Firth" # the name of your site, e.g. ACME Corp.
 
 name: Alex Firth
-user_title: gameplay programmer and technical artist
+description: gameplay programmer and technical artist

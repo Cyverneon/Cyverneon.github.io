@@ -1,4 +1,18 @@
 ---
 ---
 
-@import "base";
+@import "lib/normalize";
+@import "lib/fontawesome";
+@import "lib/devicon";
+
+@import 'vars';
+@import 'base';
+@import 'animation';
+@import 'header';
+@import 'about';
+@import 'projects';
+@import 'footer';
+
+@import "fontawesome_scss/fontawesome";
+@import "fontawesome_scss/brands";
+@import "fontawesome_scss/solid";
