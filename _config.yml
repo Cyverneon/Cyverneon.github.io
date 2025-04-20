@@ -1,19 +1,6 @@
-# Site settings
-title: Alex Firth Portfolio
-description: Game dev portfolio site
+url: "https://cyverneon.dev" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://cyverneon.github.io/" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+title: "Alex Firth" # the name of your site, e.g. ACME Corp.
 
-# User settings
-username: Alex Firth
-user_description: Hey, I'm Alex. I'm a scottish games programmer. My main exerience is with C++ and C#, and I've made games in Unreal, Unity, and Godot. I also have some art experience with modelling, animating and texturing in Blender. I enjoy creative problem solving and learning new things and I love any area of game dev where programming and art intersect.
+name: Alex Firth
 user_title: gameplay programmer and technical artist
-
-# Google-analytics
-google-analytics:
-  id: ""
-
-exclude: ['package.json', 'src' , 'node_modules']
-
-sass:
-  sass_dir: _sass
