@@ -1,11 +1,13 @@
-<div class="header">
-    <h1>
-        <span class="header-name">{{site.name}}</span>
-        <span class="header-description">{{site.description}}</span>
-    </h1>
-    <div class="header-icons">
-        {% for link in site.data.links %}
-            <a aria-label="{{link.label}}" target="_blank" href="{{link.link}}"><i class="{{link.class}}" aria-hidden="true"></i></a>
-        {% endfor %}
+<div id="header-js">
+    <div class="header">
+        <h1>
+            <span class="header-name">{{site.name}}</span>
+            <span class="header-description">{{site.description}}</span>
+        </h1>
+        <div class="header-icons">
+            {% for link in site.data.links %}
+                <a aria-label="{{link.label}}" target="_blank" href="{{link.link}}"><i class="{{link.class}}" aria-hidden="true"></i></a>
+            {% endfor %}
+        </div>
     </div>
 </div>
