@@ -1,0 +1,19 @@
+- label: Email me
+  link: mailto:cyverneon@gmail.com
+  class: icon fa-solid fa-envelope
+
+- label: My itch.io
+  link: https://cyverneon.itch.io/
+  class: icon fa-brands fa-itch-io
+
+- label: My github
+  link: https://github.com/Cyverneon
+  class: icon fa-brands fa-github
+
+- label: My bluesky
+  link: https://bsky.app/profile/cyvern.bsky.social
+  class: icon fa-brands fa-bluesky
+
+- label: My hackerrank
+  link: https://www.hackerrank.com/profile/cyvern
+  class: icon fa-brands fa-hackerrank
