@@ -13,6 +13,15 @@
   tech: Unreal, Blueprint, Blender
   info: A cel-shaded exploration-action game. The player must explore an abandoned underground research facility, fighting enemies and unlocking new abilities.<br><br>I was the sole developer and responsible for the programming and design, as well as some 3d modelling and animation, including the player character.
   image: BuriedEclipse.jpeg
-  image-alt: Screenshots of a horror game showing multiple puzzles involving mirrors.
+  image-alt: Screenshot of a cel-shaded insect creature in a mechanical environment.
   link-text: Check it out on itch.io
-  link: https://gcugames.itch.io/mirror-mirror
+  link: https://cyverneon.itch.io/buried-eclipse
+
+- title: Who Am I
+  date: May 2023
+  tech: Unreal, Blueprint, Blender
+  info: A FPS game vertical slice. The player wakes up with no idea who they are and a mysterious voice through an earpiece. They must find a weapon and escape the building.<br><br>I was given a brief describing a scenario, and designed and implemented a short level around it.
+  image: WhoAmI.png
+  image-alt: Screenshot of a FPS game. The player is looking at a broken wall in an office building.
+  link-text: Check it out on itch.io
+  link: https://cyverneon.itch.io/whoamilevel
