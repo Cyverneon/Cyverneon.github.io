@@ -25,3 +25,12 @@
   image-alt: Screenshot of a FPS game. The player is looking at a broken wall in an office building.
   link-text: Check it out on itch.io
   link: https://cyverneon.itch.io/whoamilevel
+
+- title: PCG Pipes
+  date: March 2025 - April 2025
+  tech: Unreal, C++
+  info: A tool to generate a pipe model based on a spline.<br><br>It allows for modifying the meshes and materials used and spawning braces along the pipe based on a frequency.
+  image: PCGPipes.png
+  image-alt: Screenshot of a pipe model in a game engine.
+  link-text: Check it out on Github
+  link: https://github.com/Cyverneon/PipesPCG
