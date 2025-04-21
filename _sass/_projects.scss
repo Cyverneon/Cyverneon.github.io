@@ -1,4 +1,5 @@
-#projects {
+#projects
+{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -6,16 +7,19 @@
   width: 90%;
   max-width: 960px;
   margin: 0 auto;
-  @media only screen and (min-width: $cut) {
+  @media only screen and (min-width: $cut)
+  {
     width: 80%;
   }
 }
 
-.project-title {
+.project-title
+{
   text-align: center;
 }
 
-.user-projects {
+.user-projects
+{
   display: flex;
   flex-direction: column;
   @media only screen and (min-width: $cut)
@@ -25,18 +29,44 @@
   }
   margin: 20px auto;
   margin-top: 0px auto;
-  img {
+  img
+  {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
   }
-  li {
+  li 
+  {
     color: $main;
     font-size: 1.1rem;
   }
-  p {
+  p
+  {
     margin-right: 5px;
   }
+}
+
+.user-small-projects
+{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  p
+  {
+    font-size: 16px;
+  }
+  @media only screen and (min-width: $cut)
+  {
+    flex-wrap: nowrap;
+    font-size: 75px;
+  }
+}
+
+.small-project
+{
+  margin: 10px;
 }
 
 .contents
@@ -56,8 +86,10 @@
   }
 }
 
-.project-link {
+.project-link 
+{
   width: fit-content;
+  font-size: 16px;
   margin: 10px 0px;
   padding: 5px;
   color: $main;
@@ -71,7 +103,8 @@
   transition: color 0.3s ease-out,
               background-color 0.3s ease-out,
               border-color 0.3s ease-out;
-  &:hover {
+  &:hover
+  {
     background-color: $main;
     border-color: $main;
     color: $bg;
@@ -79,7 +112,8 @@
                 background-color 0.3s ease-in,
                 border-color 0.3s ease-in;
   }
-  &:active {
+  &:active
+  {
     background-color: $main;
     border-color: $main;
     color: $bg;
