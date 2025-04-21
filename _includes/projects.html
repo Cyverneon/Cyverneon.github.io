@@ -1,0 +1,29 @@
+<section id="projects">
+    <div class="user-details">
+        <h1> Projects </h1>
+    </div>
+    
+    {% for project in site.data.projects %}
+    <h3 class="project-title"> {{project.title}} </h3>
+    
+    <div class="user-projects">
+    
+        <div class="contents">
+            <ul>
+                <li>{{project.date}}</li>
+                <li>Team size: {{project.team-size}}</li>
+                <li>Technologies: {{project.tech}}</li>
+            </ul>
+            <p>{{project.info}}</p>
+        </div>
+    
+        <div class="images">
+            <img alt="{{project.image-alt}}" src="{{site.baseurl}}/assets/img/{{project.image}}" />
+        </div>
+    
+    </div>
+
+    <a class="project-link" target="_blank" href="{{project.link}}">{{project.link-text}}</a>
+    {% endfor %}
+
+</section>

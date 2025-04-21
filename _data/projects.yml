@@ -1,0 +1,18 @@
+- title: Mirror Mirror
+  date: Sep 2023 - May 2024
+  team-size: 15
+  tech: Unity, C#, HLSL
+  info: Mirror Mirror is a first person puzzle-horror game. The player is trapped in a bathroom and must complete ritual tasks to defeat a demon.<br><br>I was responsible for the reflection rendering and many of the puzzle mechanics, as well as various other tasks throughout the project's development.
+  image: MirrorMirror.jpeg
+  image-alt: Screenshots of a horror game showing multiple puzzles involving mirrors.
+  link-text: Check it out on itch.io
+  link: https://gcugames.itch.io/mirror-mirror
+
+- title: Buried Eclipse
+  date: March 2023 - May 2023
+  tech: Unreal, Blueprint, Blender
+  info: A cel-shaded exploration-action game. The player must explore an abandoned underground research facility, fighting enemies and unlocking new abilities.<br><br>I was the sole developer and responsible for the programming and design, as well as some 3d modelling and animation, including the player character.
+  image: BuriedEclipse.jpeg
+  image-alt: Screenshots of a horror game showing multiple puzzles involving mirrors.
+  link-text: Check it out on itch.io
+  link: https://gcugames.itch.io/mirror-mirror
