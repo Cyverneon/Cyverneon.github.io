@@ -10,9 +10,15 @@
     
         <div class="contents">
             <ul>
-                <li>{{project.date}}</li>
-                <li>Team size: {{project.team-size}}</li>
-                <li>Technologies: {{project.tech}}</li>
+                {% if project.date %}
+                    <li>{{project.date}}</li>
+                {% endif %}
+                {% if project.team-size %}
+                    <li>Team size: {{project.team-size}}</li>
+                {% endif %}
+                {% if project.tech %}
+                    <li>Technologies: {{project.tech}}</li>
+                {% endif %}
             </ul>
             <p>{{project.info}}</p>
         </div>
