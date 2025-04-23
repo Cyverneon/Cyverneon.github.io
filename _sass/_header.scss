@@ -9,6 +9,7 @@
   background-attachment: fixed;
   width:100% !important;
   height:60vh !important;
+  border-bottom: 1px solid #444466;
 }
 
 .header {
@@ -16,7 +17,7 @@
   text-align: center;
   color: $main;
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 50%;
   margin: 0 auto;
   -webkit-transform: translate(-50%, -50%);
