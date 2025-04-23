@@ -1,4 +1,4 @@
-#header-js {
+#header-canvas {
   background: $bg;
   display: flex;
   vertical-align: bottom;
@@ -7,10 +7,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  .particles-js-canvas-el {
-    width:100% !important;
-    height:60vh !important;
-  }
+  width:100% !important;
+  height:60vh !important;
 }
 
 .header {
