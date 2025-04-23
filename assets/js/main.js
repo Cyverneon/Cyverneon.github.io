@@ -167,7 +167,7 @@ function draw_circle(xpos, ypos, col, radius)
 
 function add_food(xpos, ypos)
 {
-    if (foodPos.length < 10)
+    if (foodPos.length < 200)
     {
         foodPos.push(new Vector(xpos, ypos));
     }
