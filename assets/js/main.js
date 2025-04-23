@@ -255,9 +255,12 @@ window.onload = function()
     lastFrameTime = new Date();
     get_canvas_height();
 
-    canvas.addEventListener('click', (e) => 
+    document.addEventListener('click', (e) => 
     {
-        add_food(e.pageX, e.pageY);
+        if (e.pageX < cw && e.pageY < ch)
+        {
+            add_food(e.pageX, e.pageY);
+        }
     })
 
     requestAnimationFrame(step);
