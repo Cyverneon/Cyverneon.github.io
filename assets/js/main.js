@@ -3,6 +3,8 @@ const ctx = canvas.getContext('2d');
 var cw;
 var ch;
 
+var visible = true;
+
 var lastFrameTime;
 
 class Vector
@@ -42,7 +44,7 @@ class Snake
 {
     constructor(segmentCount, segmentDistance)
     {
-        this.pos = new Vector(20, 20);
+        this.pos = new Vector(segmentCount*segmentDistance, 20);
         this.vel = new Vector(0, 0);
         this.trackingFood = false;
         this.targetPos = new Vector(0, 0);
@@ -56,7 +58,7 @@ class Snake
         this.segments = new Array();
         for (let i = 0; i < segmentCount; i++)
         {
-            this.segments.push(new Vector(this.pos.x - (-segmentDistance*i), this.pos.y));
+            this.segments.push(new Vector(this.pos.x - (segmentDistance*i), this.pos.y));
         }
     }
 
@@ -223,6 +225,11 @@ function update_game(delta)
     }
     lastFrameFoodCount = foodPos.length;
     snake.vel = snake.vel.add(snake.seek().multiply(delta));
+    if (snake.vel.magnitude() > snake.maxSpeed)
+    {
+        snake.vel = snake.vel.normalize().multiply(snake.maxSpeed);
+    }
+
     snake.segments[0] = snake.segments[0].add(snake.vel.multiply(delta));
     snake.update_segments();
 }
@@ -243,9 +250,15 @@ function step()
     var delta = (frameTime - lastFrameTime)/1000;
     lastFrameTime = frameTime;
 
-    update_game(delta);
-    
-    draw_game();
+    // if the delta is very high, it can produce unintended results like the snake moving very far in one frame
+    // this happens often when the tab is not visible because browsers won't run very many animation frames due to optimisation
+    // the snake would often have disappeared when returning to the tab due to this quirk
+    // hacky solution that's good enough for this usecase is just to skip running game logic if delta is super high
+    if (delta < 1)
+    {
+        update_game(delta);
+        draw_game();
+    }
 
     requestAnimationFrame(step);
 }
@@ -254,6 +267,7 @@ window.onload = function()
 {
     lastFrameTime = new Date();
     get_canvas_height();
+    snake.targetPos = new Vector(cw/2, ch/2);
 
     document.addEventListener('click', (e) => 
     {
