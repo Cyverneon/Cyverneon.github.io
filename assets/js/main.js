@@ -127,6 +127,22 @@ class Snake
         }
     }
 
+    target_closest_food()
+    {
+        var closestIndex = 0;
+        var closestLength = this.segments[0].subtract(foodPos[0]).magnitude();
+        for (let i = 1; i < foodPos.length; i++)
+        {
+            var thisLength = this.segments[0].subtract(foodPos[i]).magnitude();
+            if (thisLength < closestLength)
+            {
+                closestLength = thisLength;
+                closestIndex = i;
+            }
+        }
+        this.targetPos = foodPos[closestIndex];
+    }
+
     random_target()
     {
         this.targetPos = new Vector(Math.random() * cw, Math.random() * ch);
@@ -142,12 +158,24 @@ class Snake
 
         return steering;
     }
+
+    move(delta)
+    {
+        this.vel = this.vel.add(this.seek().multiply(delta));
+        if (this.vel.magnitude() > this.maxSpeed)
+        {
+            this.vel = this.vel.normalize().multiply(this.maxSpeed);
+        }
+        this.segments[0] = this.segments[0].add(this.vel.multiply(delta));
+        this.update_segments();
+    }
 }
 
 var snake = new Snake(20, 15);
 
 var foodPos = new Array();
-var lastFrameFoodCount = 0;
+var justAte = false;
+var justSpawnedFood = false;
 
 function get_canvas_height()
 {
@@ -170,6 +198,7 @@ function add_food(xpos, ypos)
     if (foodPos.length < 200)
     {
         foodPos.push(new Vector(xpos, ypos));
+        justSpawnedFood = true;
     }
 }
 
@@ -180,36 +209,25 @@ function update_game(delta)
         if (snake.segments[0].subtract(foodPos[i]).magnitude() < snake.width)
         {
             foodPos.splice(i, 1);
+            justAte = true;
             i--;
         }
     }
     if (foodPos.length > 0)
     {
-        if (foodPos.length != lastFrameFoodCount)
+        if (justAte || justSpawnedFood)
         {
-            var closestIndex = 0;
-            var closestLength = snake.segments[0].subtract(foodPos[0]).magnitude();
-            for (let i = 1; i < foodPos.length; i++)
-            {
-                var thisLength = snake.segments[0].subtract(foodPos[i]).magnitude();
-                if (thisLength < closestLength)
-                {
-                    closestLength = thisLength;
-                    closestIndex = i;
-                }
-            }
-            snake.trackingFood = true;
-            snake.targetPos = foodPos[closestIndex];
+            snake.target_closest_food();
+            justAte = false;
+            justSpawnedFood = false;
         }
     }
     else 
     {
-        // if tracking food is true despite no more food positions it means snake just ate the last food
-        // so a new random target is required
-        if (snake.trackingFood)
+        if (justAte)
         {
             snake.random_target();
-            snake.trackingFood = false;
+            justAte = false;
         }
         else
         {
@@ -217,21 +235,13 @@ function update_game(delta)
             {
                 snake.random_target();
             }
-            else if (snake.segments[0].subtract(snake.targetPos).magnitude() < snake.width)
+            else if (snake.segments[0].subtract(snake.targetPos).magnitude() < (snake.width*3))
             {
                 snake.random_target();
             }
         }
     }
-    lastFrameFoodCount = foodPos.length;
-    snake.vel = snake.vel.add(snake.seek().multiply(delta));
-    if (snake.vel.magnitude() > snake.maxSpeed)
-    {
-        snake.vel = snake.vel.normalize().multiply(snake.maxSpeed);
-    }
-
-    snake.segments[0] = snake.segments[0].add(snake.vel.multiply(delta));
-    snake.update_segments();
+    snake.move(delta);
 }
 
 function draw_game()
