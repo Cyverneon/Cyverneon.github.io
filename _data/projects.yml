@@ -1,3 +1,19 @@
+- title: Red Herring
+  date: June 2026
+  team-size: 2
+  tech: Godot, GDScript, Blender
+  info: 2 week project for <a href="https://itch.io/jam/comfy-jam-summer-2026">Comfy Jam Summer 2026</a>. You play as a fish and search the coral reef in search of a sandwich, with the mischievous local shrimp helping and hindering along the way.
+  video: red_herring.mp4
+  itch: https://cyverneon.itch.io/red-herring
+
+- title: Déjà Pomme
+  date: Jan 2026
+  team-size: 2
+  tech: Godot, GDScript
+  info: 3 day project for <a href="https://itch.io/jam/mini-jame-gam-50">Mini Jame Gam 50</a>. Puzzle platformer where you play as an apple with the ability to loop through time, leaving echoes of your past selves.
+  video: deja_pomme.mp4
+  itch: https://cyverneon.itch.io/deja-pomme
+
 - title: Mirror Mirror
   date: Sep 2023 - May 2024
   team-size: 15
@@ -5,8 +21,7 @@
   info: Mirror Mirror is a first person puzzle-horror game. The player is trapped in a bathroom and must complete ritual tasks to defeat a demon.<br><br>I was responsible for the reflection rendering and many of the puzzle mechanics, as well as various other tasks throughout the project's development.
   image: MirrorMirror.jpeg
   image-alt: Screenshots of a horror game showing multiple puzzles involving mirrors.
-  link-text: Check it out on itch.io
-  link: https://gcugames.itch.io/mirror-mirror
+  itch: https://gcugames.itch.io/mirror-mirror
 
 - title: Buried Eclipse
   date: March 2023 - May 2023
@@ -14,8 +29,7 @@
   info: A cel-shaded exploration-action game. The player must explore an abandoned underground research facility, fighting enemies and unlocking new abilities.<br><br>I was the sole developer and responsible for the programming and design, as well as some 3d modelling and animation, including the player character.
   image: BuriedEclipse.jpeg
   image-alt: Screenshot of a cel-shaded insect creature in a mechanical environment.
-  link-text: Check it out on itch.io
-  link: https://cyverneon.itch.io/buried-eclipse
+  itch: https://cyverneon.itch.io/buried-eclipse
 
 - title: Who Am I
   date: May 2023
@@ -23,8 +37,7 @@
   info: A FPS game vertical slice. The player wakes up with no idea who they are and a mysterious voice through an earpiece. They must find a weapon and escape the building.<br><br>I was given a brief describing a scenario, and designed and implemented a short level around it.
   image: WhoAmI.png
   image-alt: Screenshot of a FPS game. The player is looking at a broken wall in an office building.
-  link-text: Check it out on itch.io
-  link: https://cyverneon.itch.io/whoamilevel
+  itch: https://cyverneon.itch.io/whoamilevel
 
 - title: PCG Pipes
   date: March 2025 - April 2025
@@ -32,5 +45,4 @@
   info: A tool to generate a pipe model based on a spline.<br><br>It allows for modifying the meshes and materials used and spawning braces along the pipe based on a frequency.
   image: PCGPipes.png
   image-alt: Screenshot of a pipe model in a game engine.
-  link-text: Check it out on Github
-  link: https://github.com/Cyverneon/PipesPCG
+  github: https://github.com/Cyverneon/PipesPCG

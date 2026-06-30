@@ -14,14 +14,15 @@
 
 .header {
   z-index: 1;
-  text-align: center;
+  text-align: left;
   color: $main;
   position: absolute;
   top: 25%;
-  left: 50%;
+  left: 10%;
+  right: 40%;
   margin: 0 auto;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
   .header-name {
     font-size: 50px;
     display: block;
@@ -59,7 +60,7 @@
 
 .header-icons {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   text-align: center;
   .icon {
     text-align: center;

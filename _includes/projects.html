@@ -24,12 +24,23 @@
         </div>
     
         <div class="images">
+            {% if project.video %}
+            <video controls>
+                <source src="{{site.baseurl}}/assets/vids/{{project.video}}"/>
+            </video>
+            {% elsif project.image %}
             <img alt="{{project.image-alt}}" src="{{site.baseurl}}/assets/img/{{project.image}}" />
+            {% endif %}
         </div>
     
     </div>
 
-    <a class="project-link" target="_blank" href="{{project.link}}">{{project.link-text}}</a>
+    {% if project.itch %}
+    <a class="project-link" target="_blank" href="{{project.itch}}"><span class="project-link-icon icon fa-brands fa-itch-io"> </span> Check it out on itch.io</a>
+    {% endif %}
+    {% if project.github %}
+    <a class="project-link" target="_blank" href="{{project.github}}"><span class="project-link-icon icon fa-brands fa-github"> </span> Check it out on Github</a>
+    {% endif %}
     {% endfor %}
 
     <!--

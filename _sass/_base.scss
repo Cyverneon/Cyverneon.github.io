@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
     margin: 0;
@@ -7,8 +7,24 @@ body {
     line-height: 1.5;
     background-color: $bg;
     color: $main;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Space Mono', monospace;
 }
+
+a
+{
+    text-decoration: none;
+    margin: 0;
+    color: #6895cc;
+    &:hover
+    {
+        color: $sec;
+    }
+    &:active
+    {
+        color: $sec;
+    }
+}
+
 article, aside, figcaption, figure, footer, header, nav, section {
     display: block;
 }

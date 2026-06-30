@@ -35,6 +35,12 @@
     height: auto;
     border-radius: 5px;
   }
+  video
+  {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
   li 
   {
     color: $main;
@@ -84,6 +90,11 @@
   {
     width: 48%;
   }
+}
+
+.project-link-icon
+{
+  font-size: 22px;
 }
 
 .project-link 
