@@ -3,12 +3,12 @@
   display: flex;
   vertical-align: bottom;
   width: 100%;
-  min-height: 60vh;
+  min-height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   width:100% !important;
-  height:60vh !important;
+  height:50vh !important;
   border-bottom: 1px solid #444466;
 }
 
@@ -17,11 +17,15 @@
   text-align: left;
   color: $main;
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 50%;
   margin: 0 auto;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+
+  width: 90%;
+  margin: 0 auto;
+  max-width: 960px;
   .header-name {
     font-size: 50px;
     display: block;
