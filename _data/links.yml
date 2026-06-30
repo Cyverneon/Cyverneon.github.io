@@ -17,3 +17,7 @@
 - label: My Hackerrank
   link: https://www.hackerrank.com/profile/cyvern
   class: icon fa-brands fa-hackerrank
+
+- label: My Doggo
+  link: sula
+  class: icon fa-solid fa-dog

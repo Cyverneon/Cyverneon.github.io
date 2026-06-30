@@ -10,7 +10,11 @@
     <br/>
     <div class="header-icons">
         {% for link in site.data.links %}
-            <a aria-label="{{link.label}}" target="_blank" href="{{link.link}}"><i class="{{link.class}}" aria-hidden="true"></i></a>
+            {% if link.label == "My Doggo" %}
+                <a aria-label="{{link.label}}" href="{{link.link}}"><i class="{{link.class}}" aria-hidden="true"></i></a>
+            {% else %}
+                <a aria-label="{{link.label}}" target="_blank" href="{{link.link}}"><i class="{{link.class}}" aria-hidden="true"></i></a>
+            {% endif %}
         {% endfor %}
     </div>
 </div>
