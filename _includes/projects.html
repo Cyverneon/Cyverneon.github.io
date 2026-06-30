@@ -23,7 +23,7 @@
     
         <div class="images">
             {% if project.video %}
-            <video controls>
+            <video poster="{{site.baseurl}}/assets/img/{{project.image}}" controls>
                 <source src="{{site.baseurl}}/assets/vids/{{project.video}}"/>
             </video>
             {% elsif project.image %}
